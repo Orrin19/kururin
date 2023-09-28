@@ -10,7 +10,7 @@ body {
 }
 
 body.got-kurukured {
-  background-image: url('/assets/herta.gif');
+  background-image: url('https://raw.githubusercontent.com/Orrin19/kururin/main/assets/herta.gif');
   background-repeat: repeat;
   background-position: 50% 50%;
   background-size: 20vw;
