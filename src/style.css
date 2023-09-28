@@ -1,0 +1,79 @@
+body {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+body.got-kurukured {
+  background-image: url('/assets/herta.gif');
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  background-size: 20vw;
+}
+
+.herta {
+  cursor: pointer;
+  max-height: 25vh;
+  max-width: 25vw;
+}
+
+.got-kurukured .herta {
+  display: none;
+}
+
+.label {
+  display: none;
+}
+
+.got-kurukured .label {
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: block;
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  width: 35vw;
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
